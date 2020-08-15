@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+h2 {
+  color: red;
+}
+
+.bordered-box {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.star {
+  position: relative;
+  
+  display: inline-block;
+  width: 0;
+  height: 0;
+  
+  margin-top: .9em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  
+  border-right:  .3em solid transparent;
+  border-bottom: .7em  solid #FC0;
+  border-left:   .3em solid transparent;
+
+  /* Controlls the size of the stars. */
+  font-size: 32px;
+}
+
+.star:before, .star:after {
+  content: '';
+  
+  display: block;
+  width: 0;
+  height: 0;
+  
+  position: absolute;
+  top: .6em;
+  left: -1em;
+
+  border-right:  1em solid transparent;
+  border-bottom: .7em  solid #FC0;
+  border-left:   1em solid transparent;
+
+  transform: rotate(-35deg);
+}
+
+.star:after {  
+  transform: rotate(35deg);
+}
+
+.number {
+  height: 72px;
+  width: 72px;
+  position: relative;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
